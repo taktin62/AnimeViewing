@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>タイトル新規登録画面</title>
+<!-- CSS only -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+	crossorigin="anonymous">
+
+<style>
+header {
+	z-index: 1;
+	width: 100%;
+	position: fixed;
+	vertical-align: text-bottom;
+	overflow: hidden;
+	top: 0;
+	padding: 0;
+	height: 75px;
+	font-size: 15pt;
+	color: #000000;
+	background: #99cc65;
+	text-align: center;
+	padding: 5px;
+	margin: 0px;
+}
+
+.main {
+	margin-top: 120px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+fieldset.label-60 label {
+	width: 60px;
+	height: 40px;
+}
+
+footer {
+	z-index: 1;
+	width: 100%;
+	vertical-align: text-bottom;
+	overflow: hidden;
+	height: 75px;
+	line-height: 24px;
+	text-align: center;
+	font-size: 12pt;
+	background: #99cc65;
+	margin-top: auto;
+	position: absolute;
+	bottom: 0px;
+}
+
+.show_in_pc {
+	display: none;
+}
+</style>
+
+</head>
+
+<body>
+	<header>
+		<h1>Anime Viewing 新規登録画面</h1>
+	</header>
+
+	<div class="main">
+		<h3>【今期おすすめアニメ】</h3>
+		<h3>今期見逃してしまったアニメタイトルを登録しましょう！</h3>
+
+		<form th:action="titleSignUp" method="post">
+			<fieldset class="label-60">
+				<div>
+					<label class="required">タイトル</label> <input id="title" name="title"
+						type="text" value="ちはやふる" />
+				</div>
+				<div>
+					<label class="required">ジャンル</label> <input id="genre" name="genre"
+						type="text" value="少女漫画" />
+				</div>
+				<div>
+					<label class="required">著者</label> <input id="author" name="author"
+						type="text" value="末次由紀" />
+				</div>
+				<div>
+					<label class="required">出版社</label> <input id="publisher"
+						name="publisher" type="text" value="講談社" />
+				</div>
+				<div>
+					<label class="required">雑誌</label> <input id="magazine"
+						name="magazine" type="text" value="BE・LOVE" />
+				</div>
+			</fieldset>
+
+			<button type="button" class="btn btn-info"
+				onclick="location.href='/'; return false;">一覧画面に戻る</button>
+			<button class="btn btn-light">登録</button>
+		</form>
+	</div>
+
+	<span class="show_in_pc" id="in-guides"> <span
+		class="side-guide pageTop bottom120" id="top-arrow"><a
+			href="#strHeader">↑上へ</a></span>
+
+	</span>
+
+	<footer>Copyright 2022 AnimeViewing All Rights Reserved.</footer>
+
+</body>
+
+</html>

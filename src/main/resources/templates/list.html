@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+
+<title>タイトル一覧画面</title>
+<!-- CSS only -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+	crossorigin="anonymous">
+
+<style>
+header {
+	z-index: 1;
+	width: 100%;
+	position: fixed;
+	vertical-align: text-bottom;
+	overflow: hidden;
+	top: 0;
+	padding: 0;
+	height: 75px;
+	font-size: 15pt;
+	color: #000000;
+	background: #99cc65;
+	text-align: center;
+	padding: 5px;
+	margin: 0px;
+}
+
+.main {
+	margin-top: 120px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+footer {
+	z-index: 1;
+	width: 100%;
+	vertical-align: text-bottom;
+	overflow: hidden;
+	height: 75px;
+	line-height: 24px;
+	text-align: center;
+	font-size: 12pt;
+	background: #99cc65;
+	margin-top: auto;
+	position: absolute;
+	bottom: 0px;
+	vertical-align: text-bottom;
+	overflow: hidden;
+	height: 75px;
+	line-height: 24px;
+	text-align: center;
+	font-size: 12pt;
+	background: #99cc65;
+	margin-top: auto;
+	overflow: hidden;
+	height: 75px;
+	line-height: 24px;
+	text-align: center;
+	font-size: 12pt;
+	background: #99cc65;
+	margin-top: auto;
+}
+</style>
+</head>
+
+<body>
+
+	<header>
+		<h1>Anime Viewing 一覧画面</h1>
+	</header>
+
+	<div class="main">
+		<h3>【今期おすすめアニメ評価ランキング】</h3>
+		<h3>今期見逃してしまった高評価のアニメを登録することで、今後見れるようにしましょう！</h3>
+		<form th:action="@{/}" method="post">
+			<input name="key" type="text">
+			<button class="btn btn-light">検索</button>
+			<button formaction="/new" class="btn btn-light">新規登録</button>
+
+			<!-- TODO ページネーションを使用し、20件/1ページでページ送りをする →controller側でif文で制御して、タイムリーフ側のデータに応じて処理を行う。-->
+			<nav aria-label="Page navigation example">
+				<ul class="pagination justify-content-center">
+					<li class="page-item disabled"><a class="page-link" href="#"
+						tabindex="-1" aria-disabled="true">Previous</a></li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#">Next</a></li>
+				</ul>
+			</nav>
+
+			<h6>評価の高いアニメ</h6>
+
+			<table class="table">
+				<thead>
+					<tr>
+						<th>タイトル</th>
+						<th>ジャンル</th>
+						<th>著者</th>
+						<th>出版社</th>
+						<th>雑誌</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- TODO  Cotroller側で渡ってきたデータをThymleaf側で<td>のデータを件数ごとに回してあげる ※foreachを使用する-->
+					<tr>
+						<td>鬼滅の刃</td>
+						<td>少年漫画</td>
+						<td>吾峠呼世晴</td>
+						<td>集英社</td>
+						<td>週刊少年ジャンプ</td>
+						<td><button class="btn btn-light">更新</button></td>
+						<td><button class="btn btn-danger">削除</button></td>
+					</tr>
+
+				</tbody>
+
+			</table>
+			<!-- TODO ページネーションを使用し、20件/1ページでページ送りをする →controller側でif文で制御して、タイムリーフ側のデータに応じて処理を行う。-->
+			<nav aria-label="Page navigation example">
+				<ul class="pagination justify-content-center">
+					<li class="page-item disabled"><a class="page-link" href="#"
+						tabindex="-1" aria-disabled="true">Previous</a></li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#">Next</a></li>
+				</ul>
+			</nav>
+		</form>
+	</div>
+
+	<footer>Copyright 2022 AnimeViewing All Rights Reserved.</footer>
+
+</body>
+
+</html>
