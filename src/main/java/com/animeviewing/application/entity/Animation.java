@@ -10,9 +10,9 @@ public class Animation {
 	private Integer animationId;
 	private String title;
 	private String genre;
-	private String author_id;
-	private String publisher_id;
-	private String magazine_id;
+	private String authorId;
+	private String publisherId;
+	private String magazineId;
 
 	public Integer getAnimationId() {
 		return animationId;
@@ -38,28 +38,28 @@ public class Animation {
 		this.genre = genre;
 	}
 
-	public String getAuthor_id() {
-		return author_id;
+	public String getAuthorId() {
+		return authorId;
 	}
 
-	public void setAuthor_id(String author_id) {
-		this.author_id = author_id;
+	public void setAuthorId(String authorId) {
+		this.authorId = authorId;
 	}
 
-	public String getPublisher_id() {
-		return publisher_id;
+	public String getPublisherId() {
+		return publisherId;
 	}
 
-	public void setPublisher_id(String publisher_id) {
-		this.publisher_id = publisher_id;
+	public void setPublisherId(String publisherId) {
+		this.publisherId = publisherId;
 	}
 
-	public String getMagazine_id() {
-		return magazine_id;
+	public String getMagazineId() {
+		return magazineId;
 	}
 
-	public void setMagazine_id(String magazine_id) {
-		this.magazine_id = magazine_id;
+	public void setMagazineId(String magazineId) {
+		this.magazineId = magazineId;
 	}
 
 }
