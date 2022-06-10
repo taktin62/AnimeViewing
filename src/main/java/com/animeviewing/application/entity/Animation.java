@@ -3,7 +3,7 @@ package com.animeviewing.application.entity;
 /**
  * ---エンティティ
  */
-public class animation {
+public class Animation {
 	/**
 	 * フィールド
 	 */
