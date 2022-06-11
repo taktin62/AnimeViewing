@@ -65,6 +65,10 @@ footer {
 	background: #99cc65;
 	margin-top: auto;
 }
+
+.show_in_pc {
+	display: none;
+}
 </style>
 </head>
 
@@ -116,7 +120,7 @@ footer {
 						<td>吾峠呼世晴</td>
 						<td>集英社</td>
 						<td>週刊少年ジャンプ</td>
-						<td><button class="btn btn-light">更新</button></td>
+						<td><button formaction="/edit"class="btn btn-light">更新</button></td>
 						<td><button class="btn btn-danger">削除</button></td>
 					</tr>
 
@@ -136,6 +140,11 @@ footer {
 			</nav>
 		</form>
 	</div>
+	<span class="show_in_pc" id="in-guides"> <span
+		class="side-guide pageTop bottom120" id="top-arrow"><a
+			href="#strHeader">↑上へ</a></span>
+
+	</span>
 
 	<footer>Copyright 2022 AnimeViewing All Rights Reserved.</footer>
 

@@ -26,4 +26,12 @@ public class AnimeTitleController {
 	public String creat(Model model) {
 		return "new";
 	}
+
+	/**
+	 * タイトル更新画面遷移
+	 */
+	@RequestMapping("edit")
+	public String upDate(Model model) {
+		return "edit";
+	}
 }

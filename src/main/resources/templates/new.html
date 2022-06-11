@@ -54,9 +54,6 @@ footer {
 	bottom: 0px;
 }
 
-.show_in_pc {
-	display: none;
-}
 </style>
 
 </head>
@@ -70,7 +67,7 @@ footer {
 		<h3>【今期おすすめアニメ】</h3>
 		<h3>今期見逃してしまったアニメタイトルを登録しましょう！</h3>
 
-		<form th:action="titleSignUp" method="post">
+		<form th:action="new" method="post">
 			<fieldset class="label-60">
 				<div>
 					<label class="required">タイトル</label> <input id="title" name="title"
@@ -100,11 +97,6 @@ footer {
 		</form>
 	</div>
 
-	<span class="show_in_pc" id="in-guides"> <span
-		class="side-guide pageTop bottom120" id="top-arrow"><a
-			href="#strHeader">↑上へ</a></span>
-
-	</span>
 
 	<footer>Copyright 2022 AnimeViewing All Rights Reserved.</footer>
 
