@@ -31,7 +31,7 @@ public class AnimeTitleController {
 	 * タイトル更新画面遷移
 	 */
 	@RequestMapping("edit")
-	public String upDate(Model model) {
+	public String update(Model model) {
 		return "edit";
 	}
 }
