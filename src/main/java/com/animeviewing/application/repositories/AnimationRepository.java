@@ -2,7 +2,7 @@ package com.animeviewing.application.repositories;
 
 import java.util.List;
 
-import com.animeviewing.application.entity.Animation;
+import com.animeviewing.application.entities.Animation;
 
 public interface AnimationRepository {
 	/**
@@ -11,13 +11,12 @@ public interface AnimationRepository {
 	public List<Animation> findAll();
 
 	/**
-	 * 条件指定指定
+	 * 条件指定
 	 */
 	public List<Animation> find(Animation animation);
 
 	/**
 	 * 登録
-	 * @return
 	 */
 	public void create(Animation animation);
 
