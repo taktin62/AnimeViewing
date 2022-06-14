@@ -17,8 +17,9 @@ public interface AnimationRepository {
 
 	/**
 	 * 登録
+	 * @return
 	 */
-	public void insert(Animation animation);
+	public void create(Animation animation);
 
 	/**
 	 * 更新

@@ -31,7 +31,7 @@ public class AnimationRepositoryImpl implements AnimationRepository {
 	 * 登録
 	 */
 	@Override
-	public void insert(Animation animation) {
+	public void create(Animation animation) {
 		// TODO 自動生成されたメソッド・スタブ
 
 	}
