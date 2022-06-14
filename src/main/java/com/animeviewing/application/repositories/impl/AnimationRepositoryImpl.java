@@ -22,9 +22,35 @@ public class AnimationRepositoryImpl implements AnimationRepository {
 	 * 条件指定指定
 	 */
 	@Override
-	public List<Animation> find(Animation AnimationInfo) {
+	public List<Animation> find(Animation animation) {
 		// TODO 自動生成されたメソッド・スタブ
 		return null;
 	}
 
+	/**
+	 * 登録
+	 */
+	@Override
+	public void insert(Animation animation) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+	/**
+	 * 更新
+	 */
+	@Override
+	public void update(Animation animation) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+	/**
+	 * 削除
+	 */
+	@Override
+	public void delete(Integer animationId) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
 }

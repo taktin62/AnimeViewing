@@ -13,5 +13,20 @@ public interface AnimationRepository {
 	/**
 	 * 条件指定指定
 	 */
-	public List<Animation> find(Animation AnimationInfo);
+	public List<Animation> find(Animation animation);
+
+	/**
+	 * 登録
+	 */
+	public void insert(Animation animation);
+
+	/**
+	 * 更新
+	 */
+	public void update(Animation animation);
+
+	/**
+	 * 削除
+	 */
+	public void delete(Integer animationId);
 }
