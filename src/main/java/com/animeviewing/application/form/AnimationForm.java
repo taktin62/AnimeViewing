@@ -3,7 +3,7 @@ package com.animeviewing.application.form;
 /**
 * タイトル一覧画面用フォーム
 */
-public class TitleListForm {
+public class AnimationForm {
 	//タイトル一覧画面（titleList.html）の入力値を取得
 	private Integer animationId;
 	private String title;
