@@ -83,7 +83,7 @@ footer {
 		<h3>今期見逃してしまった高評価のアニメを登録することで、今後見れるようにしましょう！</h3>
 		<form th:action="@{/}" method="post">
 			<input name="key" type="text">
-			<button class="btn btn-light">検索</button>
+			<button formaction="select" class="btn btn-light">検索</button>
 			<button formaction="/new" class="btn btn-light">新規登録</button>
 
 			<!-- TODO ページネーションを使用し、20件/1ページでページ送りをする →controller側でif文で制御して、タイムリーフ側のデータに応じて処理を行う。-->
@@ -120,8 +120,8 @@ footer {
 						<td>吾峠呼世晴</td>
 						<td>集英社</td>
 						<td>週刊少年ジャンプ</td>
-						<td><button formaction="/edit"class="btn btn-light">更新</button></td>
-						<td><button class="btn btn-danger">削除</button></td>
+						<td><button formaction="/edit" class="btn btn-light">更新</button></td>
+						<td><button formaction="delete" class="btn btn-danger">削除</button></td>
 					</tr>
 
 				</tbody>

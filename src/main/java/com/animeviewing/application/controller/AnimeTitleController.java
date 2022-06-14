@@ -20,6 +20,17 @@ public class AnimeTitleController {
 	}
 
 	/**
+	 * タイトル検索画面遷移 初回用
+	 * タイトル一覧画面から検索ボタンを押下時、
+	 * 遷移の仕方が下記の通りでよいいのか仕様を再度読み込んでから作り込みする
+	 */
+	@RequestMapping("/select")
+	public String select(Model model) {
+		return "/list";
+
+	}
+
+	/**
 	 * タイトル新規登録画面遷移
 	 */
 	@RequestMapping("new")
@@ -33,5 +44,16 @@ public class AnimeTitleController {
 	@RequestMapping("edit")
 	public String update(Model model) {
 		return "edit";
+	}
+
+	/**
+	 * タイトル検索画面遷移 初回用
+	 * タイトル一覧画面から削除ボタンを押下時、
+	 * 遷移の仕方が下記の通りでよいいのか仕様を再度読み込んでから作り込みする
+	 */
+	@RequestMapping("/delete")
+	public String delete(Model model) {
+		return "/list";
+
 	}
 }
