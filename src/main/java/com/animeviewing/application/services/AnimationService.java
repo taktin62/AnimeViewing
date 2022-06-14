@@ -1,4 +1,4 @@
-package com.animeviewing.application.service;
+package com.animeviewing.application.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

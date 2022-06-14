@@ -1,4 +1,4 @@
-package com.animeviewing.application.entity;
+package com.animeviewing.application.entities;
 
 /**
  * ---エンティティ
