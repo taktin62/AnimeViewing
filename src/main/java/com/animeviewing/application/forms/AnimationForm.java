@@ -1,4 +1,4 @@
-package com.animeviewing.application.form;
+package com.animeviewing.application.forms;
 
 /**
 * タイトル一覧画面用フォーム
