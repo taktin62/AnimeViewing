@@ -15,6 +15,7 @@ public class AnimeTitleController {
 	 */
 	@RequestMapping("/")
 	public String index(Model model) {
+		//サービスクラスのgetList()を呼び出す
 		return "/list";
 
 	}

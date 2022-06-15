@@ -2,13 +2,15 @@ package com.animeviewing.application.repositories;
 
 import java.util.List;
 
+import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable;
+
 import com.animeviewing.application.entities.Animation;
 
 public interface AnimationRepository {
 	/**
 	 * 全件取得
 	 */
-	public List<Animation> findAll();
+	public List<Animation> findAll(Pageable pageable);
 
 	/**
 	 * 条件指定
@@ -20,13 +22,4 @@ public interface AnimationRepository {
 	 */
 	public void create(Animation animation);
 
-	/**
-	 * 更新
-	 */
-	public void update(Animation animation);
-
-	/**
-	 * 削除
-	 */
-	public void delete(Integer animationId);
 }
