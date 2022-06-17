@@ -68,5 +68,5 @@ COMMENT ON TABLE animation_view.publish IS '掲載テーブル';
 COMMENT ON COLUMN animation_view.publish.animation_id IS 'アニメーションID';
 COMMENT ON COLUMN animation_view.publish.magazine_id IS '掲載誌ID';
 
---ROLLBACK;
+
 COMMIT;
