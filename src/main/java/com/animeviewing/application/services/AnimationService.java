@@ -18,6 +18,8 @@ import com.animeviewing.application.repositories.AnimationRepository;
 public class AnimationService {
 	@Autowired
 	AnimationRepository animationRepository;
+	private Integer limit;
+	private Integer offset;
 
 	/**
 	 * アニメ一覧取得
@@ -25,7 +27,7 @@ public class AnimationService {
 	 */
 	public List<Animation> getList(Pageable pageable) {
 
-		return animationRepository.findAll(pageable);
+		return animationRepository.findAll(limit, offset);
 	}
 
 }
