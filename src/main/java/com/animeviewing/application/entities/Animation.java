@@ -7,7 +7,7 @@ public class Animation {
 	/**
 	 * フィールド
 	 */
-	private String AinimationId;
+	private AnimationId AnimationId;
 	private String title;
 	private String genre;
 	private String author;
@@ -17,9 +17,9 @@ public class Animation {
 	/**
 	 * コンストラクター
 	 */
-	public Animation(String title, String genre, String author, String publisher,
+	public Animation(AnimationId AnimationId, String title, String genre, String author, String publisher,
 			String magazine) {
-
+		this.AnimationId = AnimationId;
 		this.title = title;
 		this.genre = genre;
 		this.author = author;
@@ -30,8 +30,8 @@ public class Animation {
 	/**
 	 * getterメソッド
 	 */
-	public String getAinimationId() {
-		return AinimationId;
+	public AnimationId getAnimationId() {
+		return AnimationId;
 	}
 
 	public String getTitle() {
