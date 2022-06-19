@@ -7,28 +7,33 @@ public class Animation {
 	/**
 	 * フィールド
 	 */
+	private String AinimationId;
 	private String title;
 	private String genre;
-	private String authorId;
-	private String publisherId;
-	private String magazineId;
+	private String author;
+	private String publisher;
+	private String magazine;
 
 	/**
 	 * コンストラクター
 	 */
-	public Animation(String title, String genre, String authorId, String publisherId,
-			String magazineId) {
+	public Animation(String title, String genre, String author, String publisher,
+			String magazine) {
 
 		this.title = title;
 		this.genre = genre;
-		this.authorId = authorId;
-		this.publisherId = publisherId;
-		this.magazineId = magazineId;
+		this.author = author;
+		this.publisher = publisher;
+		this.magazine = magazine;
 	}
 
 	/**
 	 * getterメソッド
 	 */
+	public String getAinimationId() {
+		return AinimationId;
+	}
+
 	public String getTitle() {
 		return title;
 	}
@@ -37,16 +42,16 @@ public class Animation {
 		return genre;
 	}
 
-	public String getAuthorId() {
-		return authorId;
+	public String getAuthor() {
+		return author;
 	}
 
-	public String getPublisherId() {
-		return publisherId;
+	public String getPublisher() {
+		return publisher;
 	}
 
 	public String getMagazineId() {
-		return magazineId;
+		return magazine;
 	}
 
 }

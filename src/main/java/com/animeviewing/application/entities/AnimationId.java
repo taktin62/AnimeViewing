@@ -7,15 +7,21 @@ public class AnimationId {
 	/**
 	 * フィールド
 	 */
-	private Integer animationId;
+	private Integer value;
 
-	//コンストラクター
-	public AnimationId(Integer animationId) {
-		this.animationId = animationId;
+	/**
+	 * コンストラクター
+	 */
+	public AnimationId(Integer value) {
+		this.value = value;
 
 	}
 
-	public Integer getAnimationId() {
-		return animationId;
+	/**
+	 * ゲッター
+	 */
+	public Integer getValue() {
+		return value;
 	}
+
 }
