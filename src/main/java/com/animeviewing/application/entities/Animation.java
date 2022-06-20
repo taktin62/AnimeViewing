@@ -1,5 +1,7 @@
 package com.animeviewing.application.entities;
 
+import java.util.Optional;
+
 /**
  * アニメーションエンティティ
  */
@@ -50,8 +52,12 @@ public class Animation {
 		return publisher;
 	}
 
-	public String getMagazineId() {
-		return magazine;
+	public Optional<String> getMagazine(boolean check) {
+
+		if (check == true) {
+			return Optional.of(magazine);
+		}
+		return Optional.ofNullable(magazine);
 	}
 
 }
