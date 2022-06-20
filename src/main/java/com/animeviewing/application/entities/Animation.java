@@ -54,9 +54,6 @@ public class Animation {
 
 	public Optional<String> getMagazine(boolean check) {
 
-		if (check == true) {
-			return Optional.of(magazine);
-		}
 		return Optional.ofNullable(magazine);
 	}
 
