@@ -52,7 +52,7 @@ public class Animation {
 		return publisher;
 	}
 
-	public Optional<String> getMagazine(boolean check) {
+	public Optional<String> getMagazine() {
 
 		return Optional.ofNullable(magazine);
 	}
