@@ -3,7 +3,7 @@ package com.animeviewing.application.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,8 +18,6 @@ import com.animeviewing.application.repositories.AnimationRepository;
 public class AnimationService {
 	@Autowired
 	AnimationRepository animationRepository;
-	private Integer limit;
-	private Integer offset;
 
 	/**
 	 * アニメ一覧取得
@@ -27,7 +25,7 @@ public class AnimationService {
 	 */
 	public List<Animation> getList(Pageable pageable) {
 
-		return animationRepository.findAll(limit, offset);
+		return animationRepository.findAll(pageable);
 	}
 
 }
