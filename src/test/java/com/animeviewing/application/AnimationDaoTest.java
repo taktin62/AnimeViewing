@@ -1,17 +1,16 @@
 package com.animeviewing.application;
 
-import static org.assertj.core.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.data.jdbc.DataJdbcTest;
-import org.springframework.transaction.annotation.Transactional;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.animeviewing.application.daos.AnimationDao;
-import com.animeviewing.application.entities.AnimationId;
+import com.animeviewing.application.daos.Animations;
 
-@DataJdbcTest
-@Transactional
+@ExtendWith(SpringExtension.class)
+@SpringBootTest
 class AnimationDaoTest {
 
 	@Autowired
@@ -20,10 +19,10 @@ class AnimationDaoTest {
 	@Test
 	void testFindAll() {
 		// execute
-		Iterable<AnimationId> animationTitleFindAll = animationDao.findAll();
+		Iterable<Animations> animations = animationDao.findAll();
 
 		// assert
-        assertThat(animationTitleFindAll);
+		System.out.println(animations);
 	}
 
 }
