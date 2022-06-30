@@ -1,26 +1,17 @@
 package com.animeviewing.application;
 
-import static org.hamcrest.CoreMatchers.*;
-
-import org.hamcrest.Matcher;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class Color1Test {
-
-	//	@Test
-	//	void testGetColor() {
-	//		fail("まだ実装されていません");
-	//	}
-
-
-	private void assertThat(int i, Matcher<Integer> matcher) {
-		// TODO 自動生成されたメソッド・スタブ
-
-	}
-
 	@Test
 	public void test1() {
-		assertThat(1, is(1));
+		// 期待する値
+		Integer expected = 1;
+		// 実際の実行結果を受けての値
+		Integer actual = 1;
+		// 比較検証
+		assertEquals(expected, actual);
 	}
 
 }
