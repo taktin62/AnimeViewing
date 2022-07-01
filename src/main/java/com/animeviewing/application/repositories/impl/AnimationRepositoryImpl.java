@@ -8,9 +8,12 @@ import org.springframework.stereotype.Repository;
 import com.animeviewing.application.entities.Animation;
 import com.animeviewing.application.repositories.AnimationRepository;
 
+<<<<<<< HEAD
 /**
 * アニメーションリポジトリーインプルクラス
 */
+=======
+>>>>>>> refs/heads/feature/impl-junit-dao-findall-title
 @Repository
 public class AnimationRepositoryImpl implements AnimationRepository {
 
